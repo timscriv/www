@@ -5,34 +5,33 @@ module.exports = {
   siteMetadata: {
     url: 'https://timscriv.com',
     title: 'Tim Scriv',
-    subtitle:
-      'Dad, husband, coder, barbequer, problem-solver.',
+    subtitle: 'Dad, husband, coder, barbequer, problem-solver.',
     copyright: '© Tim Scrivner',
     disqusShortname: 'timscriv',
     menu: [
       {
         label: 'Articles',
         path: '/',
-      }
+      },
     ],
     author: {
-      name: 'Tim Scrivner',
+      name: 'Tim Scriv',
       email: 'tim@timscriv.com',
       twitter: 'timscriv',
-      github: 'timscriv'
+      github: 'timscriv',
     },
   },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "timscriv",
-        short_name: "timscriv",
-        start_url: "/",
-        background_color: "#ffffff",
-        theme_color: "#25536D",
-        display: "standalone",
-        icon: "src/assets/logos/logo.svg", // This path is relative to the root of the site.
+        name: 'timscriv',
+        short_name: 'timscriv',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#25536D',
+        display: 'standalone',
+        icon: 'src/assets/logos/logo.svg', // This path is relative to the root of the site.
       },
     },
     {
