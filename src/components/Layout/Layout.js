@@ -1,24 +1,20 @@
 // @flow strict
-import React from 'react';
-import Helmet from 'react-helmet';
-import { withPrefix } from 'gatsby';
-import type { Node as ReactNode } from 'react';
-import { useSiteMetadata } from '../../hooks';
-import styles from './Layout.module.scss';
+import React from "react";
+import Helmet from "react-helmet";
+import { withPrefix } from "gatsby";
+import type { Node as ReactNode } from "react";
+import { useSiteMetadata } from "../../hooks";
+import styles from "./Layout.module.scss";
+import { ThemeToggler } from "gatsby-plugin-dark-mode";
 
 type Props = {
   children: ReactNode,
   title: string,
   description?: string,
-  socialImage? :string
+  socialImage?: string
 };
 
-const Layout = ({
-  children,
-  title,
-  description,
-  socialImage
-}: Props) => {
+const Layout = ({ children, title, description, socialImage }: Props) => {
   const { author, url } = useSiteMetadata();
   const metaImage = socialImage != null ? socialImage : author.photo;
   const metaImageUrl = url + withPrefix(metaImage);
@@ -36,6 +32,18 @@ const Layout = ({
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
       </Helmet>
+      <ThemeToggler>
+        {({ theme, toggleTheme }) => (
+          <div className={styles.themeToggle}>
+            <input
+              className={styles.toggle}
+              type="checkbox"
+              onChange={e => toggleTheme(e.target.checked ? "light" : "dark")}
+              checked={theme === "light"}
+            />{" "}
+          </div>
+        )}
+      </ThemeToggler>
       {children}
     </div>
   );
