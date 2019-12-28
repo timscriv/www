@@ -1,16 +1,16 @@
 ---
-title: Build Your Own Primitives With Value Objects
-date: '2018-11-25T00:00:00.000Z'
+title: Build Your Own Primitives with Value Objects
+date: "2018-11-25T00:00:00.000Z"
 template: post
 draft: false
-slug: 'build-your-own-primitives-with-value-objects/'
-category: 'Value Objects'
+slug: "build-your-own-primitives-with-value-objects/"
+category: "Value Objects"
 tags:
-  - 'Clean Architecture'
-  - 'Architecture'
-  - '.NET Core'
-  - 'CSharp'
-description: 'Value objects are simple objects that give us a powerful tool for building more SOLID software and let us build our own primitive types, specially designed for our needs.'
+  - "Clean Architecture"
+  - "Architecture"
+  - ".NET Core"
+  - "CSharp"
+description: "Value objects are simple objects that give us a powerful tool for building more SOLID software and let us build our own primitive types, specially designed for our needs."
 ---
 
 > A small simple object, like money or a date range, whose equality isn't based on identity. - [Martin Fowler](https://martinfowler.com/eaaCatalog/valueObject.html)

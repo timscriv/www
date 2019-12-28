@@ -25,6 +25,8 @@ body {
   margin: 0 0 0 calc(100vw - 100%);
   font-family: $typographic-font-family;
   color: var(--color-base);
+  transition: color 0.3s ease-out 0s;
+  transition: background-color 0.3s ease-out 0s;
   line-height: $typographic-base-line-height;
   font-size: $typographic-base-font-size;
   -ms-text-size-adjust: 100%;
