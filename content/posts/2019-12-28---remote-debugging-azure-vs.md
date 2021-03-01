@@ -1,6 +1,6 @@
 ---
 title: Remote Debugging Azure App Services with Visual Studio 2019
-date: "2019-12-28T00:00:00.000Z"
+date: "2019-12-28T12:00:00.000Z"
 template: post
 draft: false
 slug: "remote-debugging-azure-vs/"

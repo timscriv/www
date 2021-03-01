@@ -1,6 +1,6 @@
 ---
 title: Build Your Own Primitives with Value Objects
-date: "2018-11-25T00:00:00.000Z"
+date: "2018-11-25T12:00:00.000Z"
 template: post
 draft: false
 slug: "build-your-own-primitives-with-value-objects/"
